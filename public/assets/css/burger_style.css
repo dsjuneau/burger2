@@ -1,0 +1,65 @@
+body {
+  background-color: darkgoldenrod;
+}
+
+.header {
+  margin: 0 auto;
+  width: 960px;
+  background: url(/assets/img/burger.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 400px;
+}
+
+.header h1 {
+  text-align: center;
+  color: white;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-column-gap: 20px;
+}
+
+.wrapper h2 {
+  justify-self: center;
+}
+
+.addarea {
+  width: 960px;
+  margin: 0 auto;
+}
+.addarea h2 {
+  margin-bottom: 10px;
+  padding: 0;
+  text-align: center;
+}
+.addarea textarea {
+  display: block;
+  margin: 0 auto;
+}
+
+.addarea button {
+  display: block;
+  margin: 10px auto;
+}
+
+#ready,
+#devoured {
+  list-style: none;
+}
+
+.readybtn {
+  margin: auto 0;
+  float: right;
+  height: 25px;
+}
+.readyitem {
+  background-color: #dddddd;
+  height: 25px;
+  margin-bottom: 3px;
+  padding-left: 3px;
+}

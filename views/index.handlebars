@@ -1,0 +1,37 @@
+<div class="header">
+
+    <h1>Eat-Da-Burger</h1>
+</div>
+
+<div class="wrapper">
+    <h2>These are ready to eat:</h2>
+    <h2>You ate:</h2>
+    <ul id="ready">
+        {{#each burgers}}
+        {{#unless devoured}}
+        <li class="readyitem">{{id}}. {{burger_name}}<button data-id={{id}} type="submit"
+                class="readybtn">Devour</button></li>
+        {{/unless}}
+        {{/each}}
+
+
+    </ul>
+
+    <ul id="devoured">
+        {{#each burgers}}
+        {{#if devoured}}
+        <li class="readyitem">{{id}}. {{burger_name}}</li>
+        {{/if}}
+        {{/each}}
+    </ul>
+</div>
+
+
+cd
+<div class="addarea">
+    <h2>Add a burger</h2>
+    <form name="main" action="POST">
+        <textarea name="addburger" cols="50" rows="4"></textarea>
+        <button type="submit" id="addbtn">Add Burger</button>
+    </form>
+</div>
